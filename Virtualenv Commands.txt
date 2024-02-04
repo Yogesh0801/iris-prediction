@@ -1,0 +1,36 @@
+1. First Create Folder on Desktop:
+	- open Cmd (Command Prompt)
+	- Then run Below Commands:
+		* cd Desktop
+			-if you get any error like "The system cannot find the path specified."
+			- Then try Below commands:
+				* cd OneDrive\Desktop
+
+	- After Running the Commands.You will see "c://user/some path/Desktop>"
+	- Then create a folder using command "mkdir" means make a directory.
+		* Run below commands to create a folder:
+			- mkdir "folder name"  --> Ex: mkdir "kits Internship"
+	- After that use "cd" command means Change a Directory
+		* Run below commands to change the folder:
+			- cd "your folder name" ---> Ex: cd "kits Internship"
+			- Then you will see path like "c:\user\some path\Desktop\kits Internship>"
+
+2. To Create a Virtual Environment Follow Below Commands:
+	- First install the virtualenv package using below command:
+		* pip install virtualenv
+	- After upon successful installation. Create Virtual Environment using below Command:
+		* virtualenv "environment name" ----> Ex: virtualenv kits
+		* if above command raises an error like "Virtualenv not found as an internal or external command" then use below command.
+			- python -m venv "environment name" ---> Ex: python -m venv kits
+	- Then you will see a folder named "kits" inside the folder named "kits Internship" which was created at beginning.
+
+
+
+3. Now Activate the Environment and install some packages/libraries/modules into the Environment:
+
+	- To Activate the Environment use the below Command:
+		* .\"environment name"\Scripts\activate   ----> Ex: .\kits\Scripts\activate
+
+	- Then you will see a path like in cmd "(kits) c:\user\some path\Desktop\kits Internship>"
+	- Now install the required packages for that use below commands:
+		*  pip install notebook numpy pandas matplotlib plotly cufflinks seaborn scikit-learn==1.2.2
